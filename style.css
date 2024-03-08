@@ -1,0 +1,345 @@
+body {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f6f1f7;
+}
+
+.todo{
+    display: grid;
+    grid-template-columns: 1fr 3fr 0.5fr;
+    grid-template-rows: 1fr 3fr;
+    grid-template-areas:
+    "foto cabecera cabecera"
+    "botones container botonescontacto";
+}
+
+.foto img {
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
+    border-radius: 50%; 
+}
+
+.foto {
+    grid-area: foto;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    justify-self: center;
+    align-self: center;
+    width: 200px; 
+    height: 200px; 
+    border-radius: 50%; 
+    border: 2px solid black; 
+    overflow: hidden; 
+}
+
+.cabecera {
+    margin-bottom: 30px;
+    margin-top: 30px;
+    grid-area: cabecera;
+    justify-items: center;
+    text-align: center;
+    border-radius: 20px;
+    padding: 20px;
+    margin-right: 120px;
+}
+
+h1{
+    background-color: #5994cf;
+    color: #ffffff;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    border: 2px solid #000;
+}
+
+
+.titulillo{
+    background-color: rgb(207, 234, 244);
+    padding: 5px;
+    border-radius: 5px;
+    border: 2px solid #000;
+
+}
+
+.botones {
+    text-align: center;
+    margin-bottom: 20px;
+    grid-area: botones;
+}
+
+.container{
+    grid-area: container;
+}
+
+.botonescontacto{
+    grid-area: botonescontacto;
+}
+
+nav a {
+    display: inline-block;
+    margin: 0 10px;
+    text-decoration: none;
+    color: #333;
+    width: 200px;
+    box-sizing: border-box; 
+    background-color: rgb(207, 234, 244);
+    transition: background-color 0.3s ease;
+    padding:10px;
+    border: 1px solid #000;
+
+}
+
+nav a:hover {
+    background-color: #7e4da3;
+    color: whitesmoke;
+}
+
+section {
+    display: none;
+    margin: 0px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.primerenlace{
+    border-radius: 10px 10px 0px 0px;
+}
+
+.ultimoenlace{
+    border-radius: 0px 0px 10px 10px;
+}
+
+section h4 {
+    margin: 10px 0;
+}
+
+ul, .curso{
+    margin-bottom: 10px;
+    margin-left: 20px;
+    color: #29046e;
+    font-weight: 600;
+    font-size: medium;
+}
+
+.infocurso{
+    color: #767272;
+    font-weight: 100;
+}
+
+.fecha{
+    color: #1c1b1c;
+}
+
+button {
+    display: block;
+    margin: 10px auto;
+    padding: 10px 10px;
+    border: none;
+    background-color: rgb(207, 234, 244);
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 1.5px solid #000;
+}
+
+button:hover {
+    background-color: #7e4da3;
+}
+
+svg {
+    border: none;
+    cursor: pointer;
+    color: #000000;
+    transition: color 0.3s ease; 
+    width: 25px; 
+    height: 25px; 
+}
+
+svg:hover {
+    color: rgb(255, 255, 255); 
+}
+
+.alert {
+    font-size: 50px;
+    padding: 10px;
+    background-color: rgb(207, 234, 244);
+    color: rgb(65, 64, 64);
+    width: 100%;
+    height: 20%;
+    text-align: center;
+    margin-bottom: 15px;
+    display: none;
+    grid-area: container;
+    border-radius: 10px;
+    box-shadow: 3px 3px 6px #767272;
+  }
+  
+  .closebtn {
+    margin-left: 15px;
+    color: rgb(20, 9, 105);
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .closebtn:hover {
+    color: rgb(222, 1, 1);
+  }
+
+  h4{
+    color: #2b2a2a;
+    background-color: rgb(207, 234, 244);
+    padding: 5px;
+    text-align: center;
+    border-radius: 5px;
+    border: 1px solid #000;
+  }
+
+  .sobremip{
+    text-align: justify;
+    margin: 50px;
+  }
+
+  .lenguajeslist {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    grid-gap: 20px;
+}
+
+.lenguajes {
+    text-align: center;
+}
+
+.imgleng {
+    width: 50px;
+    height: auto; 
+    margin-bottom: 10px; 
+}
+
+.lenguajes span {
+    font-weight: bold;
+    display: block; 
+}
+
+footer {
+    position: relative;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); 
+    color: white;
+    text-align: right;
+    padding: 2px;
+    font-size: 10px; 
+    width: 100%; 
+    margin-top: 30px;
+}
+
+
+.name {
+    display: inline-block; 
+    text-align: center; 
+    width: 100%;
+}
+
+.progress-bar {
+    display: inline-block; /* Para que la barra esté en la misma línea que el texto */
+    vertical-align: middle; /* Alineación vertical con respecto al texto */
+    width: 200px; /* Ancho de la barra de progreso */
+    height: 10px; /* Altura de la barra de progreso */
+    background-color: #f0f0f0; /* Color de fondo */
+    border-radius: 2px; /* Bordes redondeados */
+    margin-left: 10px; /* Espacio a la izquierda del texto */
+}
+
+.progress-bar-fill {
+    height: 100%;
+    width: 50%; /* Ancho inicial (ejemplo: 50%) */
+    background-color: #007bff; /* Color de la barra de progreso */
+    border-radius: 2px; /* Bordes redondeados */
+}
+
+/* Estilo del texto de los idiomas */
+#Idiomas li {
+    display: inline;
+    text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+    
+
+    .todo {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto;
+        grid-template-areas:
+        "foto foto"
+        "cabecera cabecera"
+        "botones botonescontacto"
+        "container container";
+    }
+
+    .foto,
+    .cabecera,
+    .botones,
+    .container,
+    .botonescontacto {
+        margin: auto;
+        width: 90%; 
+    }
+
+    .foto {
+        margin-top: 30px;
+        margin-bottom: 0;
+        width: 200px;
+        height: 200px; 
+    }
+
+    .cabecera {
+        margin-right: 0;
+    }
+
+    .botones {
+        margin-bottom: 10px; 
+    }
+
+    .lenguajeslist {
+        grid-template-columns: repeat(2, 1fr); 
+    }
+
+    .pdf, button{
+        margin: 0 auto;
+    }
+
+    button {
+        display: block;
+        margin: 10px auto; 
+        padding: 10px 10px;
+        border: none;
+        background-color: rgb(207, 234, 244);
+        color: white;
+        border-radius: 5px;
+        cursor: pointer;
+        border: 1.5px solid #000;
+    }
+
+    svg {
+        border: none;
+        cursor: pointer;
+        color: #000000;
+        transition: color 0.3s ease; 
+        width: 18px; 
+        height: 18px;
+    }
+}
+
+
+
