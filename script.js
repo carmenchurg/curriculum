@@ -32,4 +32,8 @@ function irALinkedin() {
     window.location.href = 'https://www.linkedin.com/in/tu-perfil-de-linkedin';
 }
 
+window.onload = function() {
+    mostrarSeccion('SobreMi');
+}
+
 
