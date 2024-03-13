@@ -36,4 +36,16 @@ window.onload = function() {
     mostrarSeccion('SobreMi');
 }
 
+function toggleNav() {
+    var navLinks = document.querySelector('.nav-links');
+    navLinks.classList.toggle('active'); // Alternar la clase 'active' en el menú
+}
+
+
+function imprimir() {
+     let secciones = document.querySelectorAll('section')
+     secciones.forEach(seccion=> seccion.style.display='block')
+
+    window.print();
+  }
 

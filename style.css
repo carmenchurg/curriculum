@@ -275,6 +275,8 @@ footer {
 
 
 
+
+
 @media screen and (max-width: 768px) {
     
 
@@ -343,5 +345,28 @@ footer {
     }
 }
 
-
+@media print {
+    .printbutton {
+      display: none;
+    }
+    .logo{
+        width: 50px;
+        height: 50px;
+    }
+    .todo{
+        display: block;
+        width: 80%;
+    }
+    nav a{
+        display: none;
+    }
+    .cabecera{
+        size-adjust: 20%;
+    }
+    .botonescontacto{
+        display:none;
+        top:0;
+        right: 0;
+    }
+  }
 
