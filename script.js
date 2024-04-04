@@ -29,7 +29,7 @@ function enviarMensaje() {
 }
 
 function irALinkedin() {
-    window.location.href = 'https://www.linkedin.com/in/tu-perfil-de-linkedin';
+    window.location.href = 'https://www.linkedin.com/in/carmen-ruiz-gonz%C3%A1lez/';
 }
 
 window.onload = function() {
